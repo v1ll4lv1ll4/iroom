@@ -2,34 +2,47 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Smart Room Projecto</title>
+		<title>Smart Room Project</title>
 	</head>
 	<body>
 		<header>
 			<h1 style="text-align:center">Smart Room Project</h1>
 		</header>
 
-	<nav style="text-align:center; font-size:20">
-		<a>Menu 1</a>
-		<a>Menu 2</a>
-		<a>Menu 3</a>
-		<a>Menu 4</a>
-	</nav>
-	<aside>
-		<a>Información</a>
-	</aside>
+		<nav style="font-size:20px; width: 80%; float:left; height:50px">
+			<a href="#">Menu 1</a>
+			<a href="#">Menu 2</a>
+			<a href="#">Menu 3</a>
+			<a href="#">Menu 4</a>
+		</nav>
+		<aside style="width:20%; float: right; font-size: 20px; text-align:center; height:50px">
+			<a href="#">Información</a>
+		</aside>
 
-	<main>
-		<section>
-			<h2>Datos de la habitación</h2>
-		</section>
+		<main style="clear: both">
+			<section style="float:left; width:50%">
+				<h2 style="text-align:center; background-color:lightblue">Datos de la habitación</h2>
+				<ul>
+					<li>País</li>
+					<li>Ciudad</li>
+					<li>Coordenadas GPS</li>
+					<li><a href="https://maps.app.goo.gl/QyTE7xjPURcKc5MR6" target="_blank">Mapa URL</a></li>
+				</ul>
+				<div style="text-align:center">
+					<img src="images/escuela-politecnica.jpg" alt="La habitación" width="300" height="200">
+				</div>
+			</section>
 
-		<section>
-			<h2>Datos de los sensores</h2>	
-		</section>
-	</main>
-	<footer>
-		<a href="https://uah.es">Universidad de Alcala</a>
-	</footer>
+			<section style="float:left; width:50%">
+				<h2 style="text-align:center; background-color:lightgrey">Datos de los sensores</h2>
+				<ul>
+					<li>Temperatura</li>
+					<li>etc.</li>
+				</ul>
+			</section>
+		</main>
+		<footer style="clear:both; text-align:center">
+			<a href="https://uah.es" target="_blank">Universidad de Alcalá</a>
+		</footer>
 	</body>
 </html>
