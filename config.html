@@ -10,15 +10,31 @@
 		</header>
 
 		<main style="clear: both">
-			<section style="width=50%; float:left">
+			<section style="float:left; width:50%">
 				<h2 style="background-color:lightblue; text-align:center">
 					Datos de la habitación
 				</h2>
+				<form>
+					País: <input list="países" style="float:right; width:95%"><br><br>
+					<datalist id="países">
+						<option value="España">
+						<option value="Portugal">
+						<option value="Francia">
+						<option value="Italia">
+						<option value="Grecia">
+					</datalist>
+					Ciudad: <input name="ciudad" type="text" style="float:right; width:93%"><br><br>
+					Coordenadas GPS: <input name="coordenadas" type="text" style="float:right; width:85%"><br><br>
+					URL: <input name="url" type="text" style="float:right; width:95%"><br><br>
+					Foto: <input name="foto" type="file" style="float:right; width:90%"><br><br>
+					Contraseña: <input name="contraseña" type="password" style="float:right; width:90%"><br><br>
+					<input value="Enviar Datos" type="Submit" style="text-align:center">
+				</form>
 			</section>
 
-			<section style="width=50%; float right">
+			<section style="float:right; width:50%">
 				<h2 style="background-color:lightgrey; text-align:center">
-					Datos de los sensores
+					Seleccione los sensores
 				</h2>
 			</section>
 			
