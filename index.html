@@ -3,21 +3,54 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Smart Room Project</title>
+		<style>
+			.caja-titulo{
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 15px;
+				margin-bottom: 20px;
+			}
+			.estilo-titulo{
+				text-align:center;
+			}
+			.caja-menus{
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 5px;
+				overflow: auto;
+				font-size:20px;
+			}
+			.caja-menu_n{
+				display: inline-block;
+				border: 1px dashed black;
+				padding: 5px;
+				margin-right:10px;
+				box-sizing: border-box;
+				text-decoration:none;
+			}
+			.caja-info{
+				float:right;
+				box-sizing: border-box;
+			}
+		</style>
 	</head>
 	<body>
-		<header>
-			<h1 style="text-align:center">Smart Room Project</h1>
+		<header class="caja-titulo">	
+			<h1 class="estilo-titulo">Smart Room Project</h1>
 		</header>
 
-		<nav style="font-size:20px; width: 80%; float:left; height:50px">
-			<a href="config.html">Menu 1</a>
-			<a href="#">Menu 2</a>
-			<a href="#">Menu 3</a>
-			<a href="#">Menu 4</a>
+		<nav class="caja-menus">
+			<a class="caja-menu_n" href="config.html">Menu 1</a>
+			<a class="caja-menu_n" href="#">Menu 2</a>
+			<a class="caja-menu_n" href="#">Menu 3</a>
+			<a class="caja-menu_n" href="#">Menu 4</a>
+
+			<aside class="caja-info">
+				<a class="caja-menu_n" href="#">Información</a>
+			</aside>
 		</nav>
-		<aside style="width:20%; float: right; font-size: 20px; text-align:center; height:50px">
-			<a href="#">Información</a>
-		</aside>
 
 		<main style="clear: both">
 			<section style="float:left; width:50%">
