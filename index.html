@@ -10,9 +10,8 @@
 				border: 1px dashed black;
 				padding: 15px;
 				margin-bottom: 20px;
-			}
-			.estilo-titulo{
-				text-align:center;
+				text-align: center;
+				font-size: 120%;
 			}
 			.caja-menus{
 				width: 100%;
@@ -34,11 +33,37 @@
 				float:right;
 				box-sizing: border-box;
 			}
+			.caja-habitacion{
+				float:left;
+				width: 49%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 5px;
+				margin-top:20px;
+				margin-bottom: 20px;
+			}
+			.caja-sensores{
+				float: right;
+				width: 49%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 5px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			.caja-pie{
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 5px;
+				text-align: center;
+				overflow: auto;
+			}
 		</style>
 	</head>
 	<body>
 		<header class="caja-titulo">	
-			<h1 class="estilo-titulo">Smart Room Project</h1>
+			<h1>Smart Room Project</h1>
 		</header>
 
 		<nav class="caja-menus">
@@ -53,7 +78,7 @@
 		</nav>
 
 		<main style="clear: both">
-			<section style="float:left; width:50%">
+			<section class="caja-habitacion">
 				<h2 style="text-align:center; background-color:lightblue">Datos de la habitación</h2>
 				<ul>
 					<li>País</li>
@@ -66,7 +91,7 @@
 				</div>
 			</section>
 
-			<section style="float:right; width:50%">
+			<section class="caja-sensores">
 				<h2 style="text-align:center; background-color:lightgrey">Datos de los sensores</h2>
 				<ul>
 					<li>Temperatura</li>
@@ -74,7 +99,7 @@
 				</ul>
 			</section>
 		</main>
-		<footer style="clear:both; text-align:center">
+		<footer class="caja-pie">
 			<a href="https://uah.es" target="_blank">Universidad de Alcalá</a>
 		</footer>
 	</body>

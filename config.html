@@ -4,45 +4,55 @@
                 <meta charset="utf-8">
                 <title>Smart Room Project</title>
                 <style>
-                        .cabecera-caja {
-                                text-align: center;
-                                color: black;
-                                font-size: 120%;
-                        }                     
-                        .caja-izquierda {
+			.caja-titulo{
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 15px;
+				margin-bottom: 20px;
+				text-align: center;
+				font-size: 120%;
+			}           
+                        .caja-habitacion{
                                 float: left;
-                                width: 50%;
+                                width: 49%;
                                 box-sizing: border-box;
                                 border: 1px dashed black;
-                                padding: 15px;
+                                padding: 5px;
+				margin-bottom: 20px;
                         }
                         
-                        .caja-derecha {
+                        .caja-sensores{
                                 float: right;
-                                width: 48%;
+                                width: 49%;
                                 box-sizing: border-box;
-                                padding: 15px;
+				border: 1px dashed black;
+                                padding: 5px;
+				margin-bottom: 20px;
                         }                        
-                        .campo-formulario {
+                        .campo-formulario{
                                 float: right;
                                 width: 65%;
                                 box-sizing: border-box;
-                        }                                                
-	                        .pie-pagina {
-                                clear: both;
-                                text-align: center;
-                                padding-top: 20px;
                         }
+			.caja-pie{
+                                width: 100%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 5px;
+                                text-align: center;
+				overflow: auto;
+			}
                 </style>
         </head>
         <body>
-                <header>
-                        <h1 style="text-align:center">Smart Room Project</h1>
+                <header class="caja-titulo">
+                        <h1>Smart Room Project</h1>
                 </header>
 
                 <main>
-			<section class="caja-izquierda">
-                                <h2 class="cabecera-caja">
+			<section class="caja-habitacion">
+                                <h2 style="text-align:center; background-color:lightblue">
                                         Datos de la habitación
                                 </h2>
                                 <form>
@@ -66,14 +76,21 @@
                                         </div>
                                 </form>
                         </section>
-                        <section class="caja-derecha">
-                                <h2 class="cabecera-caja">
+                        <section class="caja-sensores">
+                                <h2 style="text-align:center; background-color: lightgrey">
                                         Seleccione los sensores
                                 </h2>
+				<form>
+					<input name="Temperatura" value="yes" type="checkbox"> Temperatura<br>
+					<input name="Humedad" value="yes" type="checkbox"> Humedad<br>
+					<input name="Sonido" value="yes"  type="checkbox"> Nivel de Sonido<br>
+					<input name="Luz" value="yes" type="checkbox"> Nivel de luz<br>
+					<input name="Movimiento" value="yes" type="checkbox"> Movimiento<br>
+				</form>
                         </section>
                 </main>
 
-                <footer class="pie-pagina">
+                <footer class="caja-pie">
                         <a href="https://uah.es" target="_blank">Universidad de Alcalá</a>
                 </footer>
         </body>
