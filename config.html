@@ -41,7 +41,7 @@
 				border: 1px dashed black;
 				padding: 5px;
                                 text-align: center;
-				overflow: auto;
+				clear: both;
 			}
                 </style>
         </head>
@@ -51,43 +51,39 @@
                 </header>
 
                 <main>
-			<section class="caja-habitacion">
-                                <h2 style="text-align:center; background-color:lightblue">
-                                        Datos de la habitación
-                                </h2>
-                                <form>
-                                        País: <input list="países" class="campo-formulario"><br><br>
-                                        <datalist id="países">
-                                                <option value="España">
-                                                <option value="Portugal">
-                                                <option value="Francia">
-                                                <option value="Italia">
-                                                <option value="Grecia">
-                                        </datalist>
-                                        
-                                        Ciudad: <input name="ciudad" type="text" class="campo-formulario"><br><br>
-                                        Coordenadas GPS: <input name="coordenadas" type="text" class="campo-formulario"><br><br>
-                                        URL: <input name="url" type="text" class="campo-formulario"><br><br>
-                                        Foto: <input name="foto" type="file" class="campo-formulario"><br><br>
-                                        Password: <input name="contraseña" type="password" class="campo-formulario"><br><br>
-                                        
-                                        <div style="text-align:center; padding-top:10px;">
-                                                <input value="Enviar Datos" type="Submit">
-                                        </div>
-                                </form>
-                        </section>
-                        <section class="caja-sensores">
-                                <h2 style="text-align:center; background-color: lightgrey">
-                                        Seleccione los sensores
-                                </h2>
-				<form>
-					<input name="Temperatura" value="yes" type="checkbox"> Temperatura<br>
-					<input name="Humedad" value="yes" type="checkbox"> Humedad<br>
-					<input name="Sonido" value="yes"  type="checkbox"> Nivel de Sonido<br>
-					<input name="Luz" value="yes" type="checkbox"> Nivel de luz<br>
-					<input name="Movimiento" value="yes" type="checkbox"> Movimiento<br>
-				</form>
-                        </section>
+			<form>
+				<section class="caja-habitacion">
+        	                        <h2 style="text-align:center; background-color:lightblue">
+                	                        Datos de la habitación
+                        	        </h2>
+	                                        País: <input list="países" class="campo-formulario"><br><br>
+        	                                <datalist id="países">
+                	                                <option value="España">
+                        	                        <option value="Portugal">
+                                	                <option value="Francia">
+                                        	        <option value="Italia">
+                                                	<option value="Grecia">
+	                                        </datalist>                                
+	                                        Ciudad: <input name="ciudad" type="text" class="campo-formulario"><br><br>
+        	                                Coordenadas GPS: <input name="coordenadas" type="text" class="campo-formulario"><br><br>
+                	                        URL: <input name="url" type="text" class="campo-formulario"><br><br>
+                        	                Foto: <input name="foto" type="file" class="campo-formulario"><br><br>
+                                	        Password: <input name="contraseña" type="password" class="campo-formulario"><br><br>
+	                                        <div style="text-align:center; padding-top:10px;">
+        	                                        <input value="Enviar Datos" type="Submit">
+                	                        </div>
+                        	</section>
+	                        <section class="caja-sensores">
+        	                        <h2 style="text-align:center; background-color: lightgrey">
+                	                        Seleccione los sensores
+                        	        </h2>
+						<input name="Temperatura" value="yes" type="checkbox"> Temperatura<br>
+						<input name="Humedad" value="yes" type="checkbox"> Humedad<br>
+						<input name="Sonido" value="yes"  type="checkbox"> Nivel de Sonido<br>
+						<input name="Luz" value="yes" type="checkbox"> Nivel de luz<br>
+						<input name="Movimiento" value="yes" type="checkbox"> Movimiento<br>
+                        	</section>
+			</form>
                 </main>
 
                 <footer class="caja-pie">
