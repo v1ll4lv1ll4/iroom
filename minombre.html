@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Smart Room Project</title>
+		<style>
+			.caja-titulo {
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 15px;
+				margin-bottom: 20px;
+				text-align: center;
+				font-size: 120%;
+			}
+			.caja-pie {
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 5px;
+				text-align: center;
+				clear: both;
+				margin-top: 20px;
+			}
+			.estilo-cabecera {
+				text-align: center;
+				background-color: lightblue;
+				text-decoration: underline;
+				margin-top: 0;
+			}
+			.caja-formulario {
+				width: 50%;
+				margin: 0 auto;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 20px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="caja-titulo">
+			<h1>Smart Room Project</h1>
+		</header>
+
+		<main>
+			<section class="caja-formulario">
+				<h2 class="estilo-cabecera">Configuración de Nombre</h2>
+				<form>
+					<label for="nombre">Ingrese su nombre:</label>
+					<input type="text" id="nombre" required><br><br>
+					<div style="text-align:center; padding-top: 10px">
+						<input value="Enviar nombre" type="button" onclick="guardarNombre()">
+					</div>
+				</form>
+				<br>
+				<a href="index.html">Volver a la página principal</a>
+			</section>
+		</main>
+
+		<footer class="caja-pie">
+			<a href="https://uah.es" target="_blank">Universidad de Alcalá</a>
+		</footer>
+
+		<script>
+			function guardarNombre(){
+				var nombre=document.getElementById("nombre").value;
+				localStorage.setItem("fname", nombre);
+				alert("¡Nombre guardado correctamente!");
+			}
+		</script>
+	</body>
+</html>
