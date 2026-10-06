@@ -1,0 +1,108 @@
+main {
+	display: flex;
+	justify-content: space-between;
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.caja-titulo {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px dashed black;
+	padding: 15px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 120%;
+}
+
+.caja-menus {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px dashed black;
+	padding: 5px;
+	overflow: auto;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.caja-menu_n {
+	display: inline-block;
+	border: 1px dashed black;
+	padding: 5px;
+	margin-right: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.caja-info {
+	float: right;
+	box-sizing: border-box;
+}
+
+.caja-habitacion {
+	width: 49%;
+	box-sizing: border-box;
+	border: 1px dashed black;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.caja-sensores {
+	width: 49%;
+	box-sizing: border-box;
+	border: 1px dashed black;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.caja-formulario {
+	width: 50%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	border: 1px dashed black;
+	padding: 20px;
+	text-align: center;
+}
+
+.campo-formulario {
+	float: right;
+	width: 65%;
+	box-sizing: border-box;
+}
+
+.caja-pie {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px dashed black;
+	padding: 5px;
+	text-align: center;
+	clear: both;
+}
+
+.estilo-alertas {
+	text-align: center;
+	font-size: 120%;
+}
+
+.estilo-cabecera-sensores {
+	text-align: center;
+	background-color: lightgrey;
+	text-decoration: underline;
+}
+
+.estilo-cabecera-habitacion {
+	text-align: center;
+	background-color: lightblue;
+	text-decoration: underline;
+}
+
+.estilo-cabecera {
+	text-align: center;
+	background-color: lightblue;
+	text-decoration: underline;
+	margin-top: 0;
+}

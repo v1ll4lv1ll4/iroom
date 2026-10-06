@@ -1,125 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Smart Room Project</title>
-        <style>
-            main {
-                display: flex;
-                justify-content: space-between;
-            }
-            .caja-titulo {
-                width: 100%;
-                box-sizing: border-box;
-                border: 1px dashed black;
-                padding: 15px;
-                margin-bottom: 20px;
-                text-align: center;
-                font-size: 120%;
-            }
-            .caja-menus {
-                width: 100%;
-                box-sizing: border-box;
-                border: 1px dashed black;
-                padding: 5px;
-                overflow: auto;
-                font-size: 20px;
-                margin-bottom: 20px;
-            }
-            .caja-menu_n {
-                display: inline-block;
-                border: 1px dashed black;
-                padding: 5px;
-                margin-right: 10px;
-                box-sizing: border-box;
-                text-decoration: none;
-            }
-            .caja-info {
-                float: right;
-                box-sizing: border-box;
-            }
-            .caja-habitacion {
-                width: 49%;
-                box-sizing: border-box;
-                border: 1px dashed black;
-                padding: 5px;
-                margin-bottom: 20px;
-            }
-            .caja-sensores {
-                width: 49%;
-                box-sizing: border-box;
-                border: 1px dashed black;
-                padding: 5px;
-                margin-bottom: 20px;
-            }
-            .caja-pie {
-                width: 100%;
-                box-sizing: border-box;
-                border: 1px dashed black;
-                padding: 5px;
-                text-align: center;
-                overflow: auto;
-            }
-            .estilo-cabecera-sensores {
-                text-align: center;
-                background-color: lightgrey;
-                text-decoration: underline;
-            }
-            .estilo-cabecera-habitacion {
-                text-align: center;
-                background-color: lightblue;
-                text-decoration: underline;
-            }
-        </style>
-    </head>
-    <body>
-        <header class="caja-titulo">
-            <h1>Smart Room Project</h1>
-        </header>
+	<head>
+		<meta charset="utf-8">
+		<title>Smart Room Project</title>
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	</head>
+	<body>
+		<header class="caja-titulo">
+			<h1>Smart Room Project</h1>
+		</header>
 
-        <nav class="caja-menus">
-            <a class="caja-menu_n" href="config.html">Menu Configuración</a>
-            <a class="caja-menu_n" href="minombre.html">Menu Nombre</a>
-            <a class="caja-menu_n" href="#">Menu 3</a>
-            <a class="caja-menu_n" href="#">Menu 4</a>
+		<nav class="caja-menus">
+			<a class="caja-menu_n" href="config.html">Menu Configuración</a>
+			<a class="caja-menu_n" href="minombre.html">Menu Nombre</a>
+			<a class="caja-menu_n" href="#">Menu 3</a>
+			<a class="caja-menu_n" href="#">Menu 4</a>
 
-            <aside class="caja-info">
-                <a class="caja-menu_n" id="info_nombre" href="#">Información</a>
-            </aside>
-        </nav>
+			<aside class="caja-info">
+				<a class="caja-menu_n" id="info_nombre" href="#">Información</a>
+			</aside>
+		</nav>
 
-        <main style="clear: both">
-            <section class="caja-habitacion">
-                <h2 class="estilo-cabecera-habitacion">Datos de la habitación</h2>
-                <ul>
-                    <li>País</li>
-                    <li>Ciudad</li>
-                    <li>Coordenadas GPS</li>
-                    <li><a href="https://maps.app.goo.gl/QyTE7xjPURcKc5MR6" target="_blank">Mapa URL</a></li>
-                </ul>
-                <div style="text-align:center">
-                    <img src="images/escuela-politecnica.jpg" alt="La habitación" width="300" height="200">
-                </div>
-            </section>
+		<main style="clear: both">
+			<section class="caja-habitacion">
+				<h2 class="estilo-cabecera-habitacion">Datos de la habitación</h2>
+				<ul>
+					<li>País</li>
+					<li>Ciudad</li>
+					<li>Coordenadas GPS</li>
+					<li><a href="https://maps.app.goo.gl/QyTE7xjPURcKc5MR6" target="_blank">Mapa URL</a></li>
+				</ul>
+				<div style="text-align:center">
+					<img src="images/escuela-politecnica.jpg" alt="La habitación" width="300" height="200">
+				</div>
+			</section>
 
-            <section class="caja-sensores">
-                <h2 class="estilo-cabecera-sensores">Datos de los sensores</h2>
-                <ul>
-                    <li>Temperatura</li>
-                    <li>etc.</li>
-                </ul>
-            </section>
-        </main>
-        
-        <footer class="caja-pie">
-            <a href="https://uah.es" target="_blank">Universidad de Alcalá</a>
-        </footer>
-        
-        <script>
-            var nombre_guardado = localStorage.getItem("fname");
-            if(nombre_guardado != null){
-                document.getElementById("info_nombre").innerHTML = "Hola " + nombre_guardado + ": Bienvenido a Smart Room";
-            }
-        </script>
-    </body>
+			<section class="caja-sensores">
+				<h2 class="estilo-cabecera-sensores">Datos de los sensores</h2>
+				<ul>
+					<li>Temperatura</li>
+					<li>etc.</li>
+				</ul>
+			</section>
+		</main>
+
+		<footer class="caja-pie">
+			<a href="https://uah.es" target="_blank">Universidad de Alcalá</a>
+		</footer>
+
+		<script>
+			var nombre_guardado = localStorage.getItem("fname");
+			if(nombre_guardado != null){
+				document.getElementById("info_nombre").innerHTML = "Hola " + nombre_guardado + ": Bienvenido a Smart Room";
+			}
+		</script>
+	</body>
 </html>
