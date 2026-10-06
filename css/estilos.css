@@ -1,11 +1,20 @@
-main {
+.main-columnas {
 	display: flex;
 	justify-content: space-between;
+	gap: 2%;
+	margin-bottom: 20px;
+    width: 100%;
 }
 
-form {
+.main-bloque {
+	display: block;
+	margin-bottom: 20px;
+}
+
+form.form-columnas {
 	display: flex;
 	justify-content: space-between;
+	gap: 2%;
 	width: 100%;
 }
 
@@ -43,20 +52,11 @@ form {
 	box-sizing: border-box;
 }
 
-.caja-habitacion {
-	width: 49%;
+.caja-habitacion, .caja-sensores {
+	flex: 1;
 	box-sizing: border-box;
 	border: 1px dashed black;
 	padding: 5px;
-	margin-bottom: 20px;
-}
-
-.caja-sensores {
-	width: 49%;
-	box-sizing: border-box;
-	border: 1px dashed black;
-	padding: 5px;
-	margin-bottom: 20px;
 }
 
 .caja-formulario {
@@ -88,21 +88,16 @@ form {
 	font-size: 120%;
 }
 
-.estilo-cabecera-sensores {
+.estilo-cabecera-sensores, .estilo-cabecera-habitacion, .estilo-cabecera {
 	text-align: center;
-	background-color: lightgrey;
-	text-decoration: underline;
-}
-
-.estilo-cabecera-habitacion {
-	text-align: center;
-	background-color: lightblue;
-	text-decoration: underline;
-}
-
-.estilo-cabecera {
-	text-align: center;
-	background-color: lightblue;
 	text-decoration: underline;
 	margin-top: 0;
+}
+
+.estilo-cabecera-sensores {
+	background-color: lightgrey;
+}
+
+.estilo-cabecera-habitacion, .estilo-cabecera {
+	background-color: lightblue;
 }
