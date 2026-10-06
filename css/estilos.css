@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	gap: 2%;
 	margin-bottom: 20px;
-    width: 100%;
+   	width: 100%;
 }
 
 .main-bloque {
@@ -26,6 +26,7 @@ form.form-columnas {
 	margin-bottom: 20px;
 	text-align: center;
 	font-size: 120%;
+	background-color: lightgreen;
 }
 
 .caja-menus {
