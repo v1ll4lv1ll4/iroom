@@ -1,162 +1,124 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <meta charset="utf-8">
-                <title>Smart Room Project</title>
-                <style>
-                        form{
-                                display: flex;
-                                justify-content: space-between;
-                        }
-                        .caja-titulo{
-                                width: 100%;
-                                box-sizing: border-box;
-                                border: 1px dashed black;
-                                padding: 15px;
-                                margin-bottom: 20px;
-                                text-align: center;
-                                font-size: 120%;
-                        }
-                        .caja-habitacion{
-                                width: 49%;
-                                box-sizing: border-box;
-                                border: 1px dashed black;
-                                padding: 5px;
-                                margin-bottom: 20px;
-                        }
-                        .caja-sensores{
-                                width: 49%;
-                                box-sizing: border-box;
-                                border: 1px dashed black;
-                                padding: 5px;
-                                margin-bottom: 20px;
-                        }
-                        .campo-formulario{
-                                float: right;
-                                width: 65%;
-                                box-sizing: border-box;
-                        }
-                        .caja-pie{
-                                width: 100%;
-                                box-sizing: border-box;
-                                border: 1px dashed black;
-                                padding: 5px;
-                                text-align: center;
-                                clear: both;
-                        }
-                        .estilo-alertas{
-                                text-align:center;
-                                font-size:120%;
-                        }
-			.estilo-cabecera-habitacion{
-				text-align:center;
-				background-color: lightblue;
-				text-decoration: underline;
+	<head>
+		<meta charset="utf-8">
+		<title>Smart Room Project</title>
+		<style>
+			main{
+				display: flex;
+				justify-content: space-between;
+			}
+			.caja-titulo{
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 15px;
+				margin-bottom: 20px;
+				text-align: center;
+				font-size: 120%;
+			}
+			.caja-menus{
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 5px;
+				overflow: auto;
+				font-size: 20px;
+				margin-bottom: 20px;
+			}
+			.caja-menu_n{
+				display: inline-block;
+				border: 1px dashed black;
+				padding: 5px;
+				margin-right: 10px;
+				box-sizing: border-box;
+				text-decoration: none;
+			}
+			.caja-info{
+				float: right;
+				box-sizing: border-box;
+			}
+			.caja-habitacion{
+				width: 49%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 5px;
+				margin-bottom: 20px;
+			}
+			.caja-sensores{
+				width: 49%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 5px;
+				margin-bottom: 20px;
+			}
+			.caja-pie{
+				width: 100%;
+				box-sizing: border-box;
+				border: 1px dashed black;
+				padding: 5px;
+				text-align: center;
+				overflow: auto;
 			}
 			.estilo-cabecera-sensores{
 				text-align: center;
 				background-color: lightgrey;
 				text-decoration: underline;
 			}
-                </style>
-        </head>
-        <body>
-                <header class="caja-titulo">
-                        <h1>Smart Room Project</h1>
-                </header>
+			.estilo-cabecera-habitacion{
+				text-align: center;
+				background-color: lightblue;
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="caja-titulo">
+			<h1>Smart Room Project</h1>
+		</header>
 
-                <main>
-                        <form action="datos.js">
-                                <section class="caja-habitacion">
-                                        <h2 class="estilo-cabecera-habitacion">
-                                                Datos de la habitación
-                                        </h2>
+		<nav class="caja-menus">
+			<a class="caja-menu_n" href="config.html">Menu Configuración</a>
+			<a class="caja-menu_n" href="minombre.html">Menu Nombre</a>
+			<a class="caja-menu_n" href="#">Menu 3</a>
+			<a class="caja-menu_n" href="#">Menu 4</a>
 
-                                        <label for="pais">País:</label>
-                                        <input id="pais" name="pais" list="países" class="campo-formulario"><br><br>
-                                        <datalist id="países">
-                                                <option value="España">
-                                                <option value="Portugal">
-                                                <option value="Francia">
-                                                <option value="Italia">
-                                                <option value="Grecia">
-                                        </datalist>
+			<aside class="caja-info">
+				<a class="caja-menu_n" id="info_nombre" href="#">Información</a>
+			</aside>
+		</nav>
 
-                                        <label for="ciudad">Ciudad:</label>
-                                        <input id="ciudad" name="ciudad" type="text" class="campo-formulario"><br><br>
+		<main style="clear: both">
+			<section class="caja-habitacion">
+				<h2 class="estilo-cabecera-habitacion">Datos de la habitación</h2>
+				<ul>
+					<li>País</li>
+					<li>Ciudad</li>
+					<li>Coordenadas GPS</li>
+					<li><a href="https://maps.app.goo.gl/QyTE7xjPURcKc5MR6" target="_blank">Mapa URL</a></li>
+				</ul>
+				<div style="text-align:center">
+					<img src="images/escuela-politecnica.jpg" alt="La habitación" width="300" height="200">
+				</div>
+			</section>
 
-                                        <label for="coordenadas">Coordenadas GPS:</label>
-                                        <input id="coordenadas" name="coordenadas" type="text" class="campo-formulario"><br><br>
+			<section class="caja-sensores">
+				<h2 class="estilo-cabecera-sensores">Datos de los sensores</h2>
+				<ul>
+					<li>Temperatura</li>
+					<li>etc.</li>
+				</ul>
+			</section>
+		</main>
 
-                                        <label for="url">URL:</label>
-                                        <input id="url" name="url" type="text" class="campo-formulario"><br><br>
-
-                                        <label for="foto">Foto:</label>
-                                        <input id="foto" name="foto" type="file" class="campo-formulario"><br><br>
-
-                                        <label for="contrasena">Password:</label>
-                                        <input id="contrasena" name="contraseña" type="password" class="campo-formulario"><br><br>
-
-                                        <div style="text-align:center; padding-top:10px;">
-                                                <input value="Enviar Datos" type="Submit" onclick="return diferenciaTemp()">
-                                        </div>
-                                </section>
-
-                                <section class="caja-sensores">
-                                        <h2 class="estilo-cabecera-sensores">
-                                                Seleccione los sensores
-                                        </h2>
-
-                                        <input id="sensor_temp" name="Temperatura" value="yes" type="checkbox">
-                                        <label for="sensor_temp">Temperatura</label><br>
-
-                                        <input id="sensor_hum" name="Humedad" value="yes" type="checkbox">
-                                        <label for="sensor_hum">Humedad</label><br>
-
-                                        <input id="sensor_son" name="Sonido" value="yes" type="checkbox">
-                                        <label for="sensor_son">Nivel de Sonido</label><br>
-
-                                        <input id="sensor_luz" name="Luz" value="yes" type="checkbox">
-                                        <label for="sensor_luz">Nivel de luz</label><br>
-
-                                        <input id="sensor_mov" name="Movimiento" value="yes" type="checkbox">
-                                        <label for="sensor_mov">Movimiento</label>
-
-                                        <p class="estilo-alertas">Configura alertas</p>
-
-                                        <label for="t_maxima">Temperatura máxima</label>
-                                        <input id="t_maxima" name="t_maxima" min="-20" max="45" step="1" type="number" onchange="diferenciaTemp()"><br><br>
-
-                                        <label for="t_minima">Temperatura mínima</label>
-                                        <input id="t_minima" name="t_minima" min="-20" max="45" step="1" type="number" onchange="diferenciaTemp()"><br><br>
-
-                                        <label for="diferencia">Diferencia:</label>
-                                        <output id="diferencia"></output><br><br>
-                                </section>
-                        </form>
-                </main>
-
-                <footer class="caja-pie">
-                        <a href="index.html">Volver al Inicio</a>
-                </footer>
-                <script>
-			function diferenciaTemp(){
-				var minTemp = parseFloat(document.getElementById("t_minima").value);
-				var maxTemp = parseFloat(document.getElementById("t_maxima").value);
-				var out = document.getElementById("diferencia");
-				if(!isNaN(minTemp) && !isNaN(maxTemp)){
-					if (maxTemp < minTemp){
-						alert("Error: La temperatura máxima debe ser mayor o igual que la mínima.");
-						out.innerHTML = "";
-						return false;
-					}
-					else{
-						var resultado = maxTemp - minTemp;
-						out.innerHTML = resultado;
-						return true;
-					}
-				}
+		<footer class="caja-pie">
+			<a href="https://uah.es" target="_blank">Universidad de Alcalá</a>
+		</footer>
+		<script>
+			var nombre_guardado=localStorage.getItem("fname");
+			if(nombre_guardado!=null){
+				document.getElementById("info_nombre").innerHTML="Hola "+nombre_guardado+": Bienvenido a Smart Room";
 			}
 		</script>
-        </body>
+	</body>
 </html>
