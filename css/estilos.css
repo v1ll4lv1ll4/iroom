@@ -1,9 +1,8 @@
-/* Nuevo: Regla global para la tipografía y color de fondo de toda la página */
 body {
-	font-family: Arial, Helvetica, sans-serif; /* Cambia a una fuente más limpia y profesional */
-	font-size: 18px; /* Aumenta el tamaño base general para mejor legibilidad */
-	background-color: #f8f9fa; /* Fondo general gris muy claro para dar contraste a las cajas blancas */
-	color: #333; /* Color de texto gris oscuro (menos agresivo que el negro puro) */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	background-color: #f8f9fa;
+	color: #333;
 }
 
 .main-columnas {
@@ -29,170 +28,154 @@ form.form-columnas {
 .caja-titulo {
 	width: 100%;
 	box-sizing: border-box;
-	/* Modificado: Se elimina el borde punteado y se aplican colores, fuentes y sombras más vistosos */
-	border-radius: 10px; /* Suaviza las esquinas */
-	background-color: #4CAF50; /* Verde más moderno */
-	color: white; /* Letra blanca para contrastar con el fondo verde */
-	box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Añade una sombra suave para dar volumen */
-	padding: 20px; /* Aumenta el espacio interior para que no se vea vacía */
+	border-radius: 10px;
+	background-color: #4CAF50;
+	color: white;
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+	padding: 20px;
 	margin-bottom: 20px;
 	text-align: center;
-	font-size: 150%; /* Título principal mucho más grande y vistoso */
+	font-size: 150%;
 }
 
 .caja-menus {
 	width: 100%;
 	box-sizing: border-box;
-	/* Modificado: Se quita el borde punteado y se integra con fondo blanco y sombra */
 	background-color: #ffffff;
 	border-radius: 8px;
 	box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-	padding: 15px; /* Más espacio interno para rellenar huecos */
+	padding: 15px;
 	overflow: auto;
-	font-size: 18px; /* Ajuste del tamaño de letra del menú */
+	font-size: 18px;
 	margin-bottom: 20px;
 }
 
 .caja-menu_n {
 	display: inline-block;
-	/* Modificado: Transformamos los enlaces en elementos que parecen botones */
-	background-color: #e9ecef; /* Fondo gris claro */
-	color: #0056b3; /* Letra azul oscuro */
-	border-radius: 5px; /* Esquinas redondeadas */
-	padding: 10px 15px; /* Rellena más espacio haciendo el botón más grande */
-	font-weight: bold; /* Texto en negrita para resaltar */
+	background-color: #e9ecef;
+	color: #0056b3;
+	border-radius: 5px;
+	padding: 10px 15px;
+	font-weight: bold;
 	margin-right: 10px;
 	box-sizing: border-box;
-	text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+	text-decoration: none;
 }
 
 .caja-info {
 	float: right;
 	box-sizing: border-box;
-	/* Modificado: Se añade un pequeño margen superior para centrarlo verticalmente con los botones del menú */
-	padding-top: 10px; 
 }
 
 .caja-habitacion, .caja-sensores {
 	flex: 1;
 	box-sizing: border-box;
-	/* Modificado: Se elimina el borde punteado y se convierten en cajas tipo "tarjeta" blancas */
 	background-color: #ffffff;
 	border-radius: 10px;
 	box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-	padding: 20px; /* Aumentado el relleno para reducir los espacios en blanco dentro de la caja */
+	padding: 20px;
 }
 
 .caja-formulario {
-	/* Modificado: Se amplía el ancho para aprovechar mejor la pantalla y no dejar huecos inmensos a los lados */
-	width: 65%; 
+	width: 65%;
 	margin: 0 auto;
 	box-sizing: border-box;
-	/* Modificado: Estilo de tarjeta con fondo blanco y sombras */
 	background-color: #ffffff;
 	border-radius: 10px;
 	box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-	padding: 30px; /* Más relleno interior para que respire el contenido */
+	padding: 30px;
 	text-align: center;
 }
 
-/* Nuevo: Regla para los textos (etiquetas) del formulario para estructurar mejor el espacio interior */
 label {
-	display: block; /* Obliga a la etiqueta a estar en una línea propia */
-	text-align: left; /* Alinea los textos a la izquierda */
-	font-weight: bold; /* Destaca el nombre de los campos */
-	margin-bottom: 5px; /* Separa un poco la etiqueta de su cuadro de texto */
+	display: block;
+	text-align: left;
+	font-weight: bold;
+	margin-bottom: 5px;
 }
 
 .campo-formulario {
-	/* Modificado: Se quita el float:right que rompía el alineamiento y dejaba el centro en blanco */
-	display: block; /* Se comporta como un bloque sólido */
-	width: 100%; /* Ocupa el 100% de la caja, rellenando perfectamente el espacio */
-	padding: 10px; /* Cuadros de texto más anchos y fáciles de clicar */
-	margin-bottom: 15px; /* Distancia entre un campo y el siguiente */
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
 	box-sizing: border-box;
-	border: 1px solid #ccc; /* Borde sutil y elegante en vez del punteado */
-	border-radius: 5px; /* Redondea los cuadros de entrada de datos */
-	font-size: 16px; /* Letra más grande al escribir */
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
 }
 
 .caja-pie {
 	width: 100%;
 	box-sizing: border-box;
-	/* Modificado: Diseño de pie de página moderno con fondo oscuro y letra clara */
-	background-color: #343a40; /* Fondo gris muy oscuro */
-	color: white; /* Letra base blanca */
+	background-color: #343a40;
+	color: white;
 	border-radius: 5px;
-	padding: 20px; /* Más altura al pie de página */
+	padding: 20px;
 	text-align: center;
 	clear: both;
 }
 
-/* Nuevo: Da un color distintivo a los enlaces del pie de página para que se lean bien sobre fondo oscuro */
 .caja-pie a {
-	color: #4CAF50; /* Verde brillante a juego con el título principal */
-	text-decoration: none; /* Elimina el subrayado */
+	color: #4CAF50;
+	text-decoration: none;
 	font-weight: bold;
-	font-size: 110%; /* Un poco más grandes */
+	font-size: 110%;
 }
 
 .estilo-alertas {
 	text-align: center;
 	font-size: 120%;
-	/* Modificado: Se le da formato de "peligro/atención" al título de alertas */
 	font-weight: bold;
-	color: #d9534f; /* Color rojo sutil */
+	color: #d9534f;
 	margin-top: 20px;
 }
 
 .estilo-cabecera-sensores, .estilo-cabecera-habitacion, .estilo-cabecera {
 	text-align: center;
-	/* Modificado: Se elimina el subrayado viejo y se aplican bordes curvos a los títulos de las secciones */
-	text-decoration: none; 
+	text-decoration: none;
 	margin-top: 0;
-	padding: 15px; /* Títulos más voluminosos que llenan espacio */
-	border-radius: 8px; /* Títulos con bordes redondeados */
-	font-size: 130%; /* Letra más grande para los títulos de sección */
+	padding: 15px;
+	border-radius: 8px;
+	font-size: 130%;
 }
 
 .estilo-cabecera-sensores {
-	/* Modificado: Tonos grises más suaves para mejorar el contraste visual */
-	background-color: #e2e3e5; 
-	color: #383d41; /* Texto oscuro para que se lea perfectamente */
+	background-color: #e2e3e5;
+	color: #383d41;
 }
 
 .estilo-cabecera-habitacion, .estilo-cabecera {
-	/* Modificado: Tonos azules más puros para mejorar el contraste visual */
-	background-color: #cce5ff; 
-	color: #004085; /* Texto azul muy oscuro */
+	background-color: #cce5ff;
+	color: #004085;
 }
 
-.campo-en-linea{
+.campo-en-linea {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	margin-bottom: 15px;
 }
 
-.campo-en-linea label{
+.campo-en-linea label {
 	display: inline-block;
 	width: 150px;
 	margin-bottom: 0;
 }
 
-.campo-en-linea .campo-formulario{
+.campo-en-linea .campo-formulario {
 	display: inline-block;
-	width: calc(100%-160px);
+	width: calc(100% - 160px);
 	margin-bottom: 0;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
 	display: inline-block;
-	width:auto;
+	width: auto;
 	margin-right: 5px;
 }
 
-input[type="checkbox"]+label{
+input[type="checkbox"] + label {
 	display: inline;
 	font-weight: normal;
 }
