@@ -8,13 +8,9 @@ body {
 .main-columnas {
 	display: flex;
 	justify-content: space-between;
-	gap: 2%;
-	margin-bottom: 20px;
-	width: 100%;
-}
-
-.main-bloque {
-	display: block;
+	gap: 5%;
+	width: 70%;
+	margin: 0 auto;
 	margin-bottom: 20px;
 }
 
@@ -29,8 +25,8 @@ form.form-columnas {
 	width: 100%;
 	box-sizing: border-box;
 	border-radius: 10px;
-	background-color: #4CAF50;
-	color: white;
+	background-color: #cce5ff;
+	color: #004085;
 	box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 	padding: 20px;
 	margin-bottom: 20px;
@@ -77,7 +73,7 @@ form.form-columnas {
 }
 
 .caja-formulario {
-	width: 65%;
+	width: 35%;
 	margin: 0 auto;
 	box-sizing: border-box;
 	background-color: #ffffff;
@@ -85,6 +81,12 @@ form.form-columnas {
 	box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 	padding: 30px;
 	text-align: center;
+}
+
+.caja-formulario label{
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 0;
 }
 
 label {
@@ -108,8 +110,7 @@ label {
 .caja-pie {
 	width: 100%;
 	box-sizing: border-box;
-	background-color: #343a40;
-	color: white;
+	background-color: #cce5ff;
 	border-radius: 5px;
 	padding: 20px;
 	text-align: center;
@@ -117,7 +118,7 @@ label {
 }
 
 .caja-pie a {
-	color: #4CAF50;
+	color: #004085;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 110%;
@@ -127,7 +128,7 @@ label {
 	text-align: center;
 	font-size: 120%;
 	font-weight: bold;
-	color: #d9534f;
+	color: #004085;
 	margin-top: 20px;
 }
 
@@ -141,8 +142,8 @@ label {
 }
 
 .estilo-cabecera-sensores {
-	background-color: #e2e3e5;
-	color: #383d41;
+	background-color: #cce5ff;
+	color: #004085;
 }
 
 .estilo-cabecera-habitacion, .estilo-cabecera {
