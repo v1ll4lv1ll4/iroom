@@ -17,8 +17,11 @@
 						Datos de la habitación
 					</h2>
 
-					<label for="pais">País:</label>
-					<input id="pais" name="pais" list="países" class="campo-formulario"><br><br>
+					<div class="campo-en-linea">
+						<label for="pais">País:</label>
+						<input id="pais" name="pais" list="países" class="campo-formulario">
+					</div>
+
 					<datalist id="países">
 						<option value="España">
 						<option value="Portugal">
@@ -27,20 +30,30 @@
 						<option value="Grecia">
 					</datalist>
 
-					<label for="ciudad">Ciudad:</label>
-					<input id="ciudad" name="ciudad" type="text" class="campo-formulario"><br><br>
+					<div class="campo-en-linea">
+						<label for="ciudad">Ciudad:</label>
+						<input id="ciudad" name="ciudad" type="text" class="campo-formulario">
+					</div>
 
-					<label for="coordenadas">Coordenadas GPS:</label>
-					<input id="coordenadas" name="coordenadas" type="text" class="campo-formulario"><br><br>
+					<div class="campo-en-linea">
+						<label for="coordenadas">Coordenadas GPS:</label>
+						<input id="coordenadas" name="coordenadas" type="text" class="campo-formulario">
+					</div>
 
-					<label for="url">URL:</label>
-					<input id="url" name="url" type="text" class="campo-formulario"><br><br>
+					<div class="campo-en-linea">
+						<label for="url">URL:</label>
+						<input id="url" name="url" type="text" class="campo-formulario">
+					</div>
 
-					<label for="foto">Foto:</label>
-					<input id="foto" name="foto" type="file" class="campo-formulario"><br><br>
+					<div class="campo-en-linea">
+						<label for="foto">Foto:</label>
+						<input id="foto" name="foto" type="file" class="campo-formulario">
+					</div>
 
-					<label for="contrasena">Password:</label>
-					<input id="contrasena" name="contraseña" type="password" class="campo-formulario"><br><br>
+					<div class="campo-en-linea">
+						<label for="contrasena">Password:</label>
+						<input id="contrasena" name="contraseña" type="password" class="campo-formulario">
+					</div>
 
 					<div style="text-align:center; padding-top:10px;">
 						<input value="Enviar Datos" type="Submit" onclick="return diferenciaTemp()">
@@ -69,11 +82,15 @@
 
 					<p class="estilo-alertas">Configura alertas</p>
 
-					<label for="t_maxima">Temperatura máxima</label>
-					<input id="t_maxima" name="t_maxima" min="-20" max="45" step="1" type="number" onchange="diferenciaTemp()"><br><br>
+					<div class="campo-en-linea">
+						<label for="t_maxima">Temperatura máxima</label>
+						<input id="t_maxima" name="t_maxima" min="-20" max="45" step="1" type="number" onchange="diferenciaTemp()">
+					</div>
 
-					<label for="t_minima">Temperatura mínima</label>
-					<input id="t_minima" name="t_minima" min="-20" max="45" step="1" type="number" onchange="diferenciaTemp()"><br><br>
+					<div class="campo-en-linea">
+						<label for="t_minima">Temperatura mínima</label>
+						<input id="t_minima" name="t_minima" min="-20" max="45" step="1" type="number" onchange="diferenciaTemp()">
+					</div>
 
 					<label for="diferencia">Diferencia:</label>
 					<output id="diferencia"></output><br><br>
@@ -85,6 +102,7 @@
 			<a href="index.html">Volver al Inicio</a><br><br>
 			<a href="https://uah.es" target="_blank">Universidad de Alcalá</a>
 		</footer>
+		
 		<script>
 			function diferenciaTemp(){
 				var minTemp = parseFloat(document.getElementById("t_minima").value);
