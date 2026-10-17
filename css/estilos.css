@@ -75,6 +75,7 @@ form.form-columnas {
 .caja-formulario {
 	width: 35%;
 	margin: 0 auto;
+	margin-bottom: 20px;
 	box-sizing: border-box;
 	background-color: #ffffff;
 	border-radius: 10px;
