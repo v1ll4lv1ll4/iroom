@@ -10,7 +10,7 @@
 			<h1>Smart Room Project</h1>
 		</header>
 
-		<main class="main-columnas">
+		<main class="main-bloque">
 			<form action="datos.js" class="form-columnas">
 				<section class="caja-habitacion">
 					<h2 class="estilo-cabecera-habitacion">
@@ -21,7 +21,6 @@
 						<label for="pais">País:</label>
 						<input id="pais" name="pais" list="países" class="campo-formulario">
 					</div>
-
 					<datalist id="países">
 						<option value="España">
 						<option value="Portugal">
@@ -102,25 +101,7 @@
 			<a href="index.html">Volver al Inicio</a><br><br>
 			<a href="https://uah.es" target="_blank">Universidad de Alcalá</a>
 		</footer>
-		
-		<script>
-			function diferenciaTemp(){
-				var minTemp = parseFloat(document.getElementById("t_minima").value);
-				var maxTemp = parseFloat(document.getElementById("t_maxima").value);
-				var out = document.getElementById("diferencia");
-				if(!isNaN(minTemp) && !isNaN(maxTemp)){
-					if (maxTemp < minTemp){
-						alert("Error: La temperatura máxima debe ser mayor o igual que la mínima.");
-						out.innerHTML = "";
-						return false;
-					}
-					else{
-						var resultado = maxTemp - minTemp;
-						out.innerHTML = resultado;
-						return true;
-					}
-				}
-			}
-		</script>
+
+		<script type="text/javascript" src="js/datos.js"></script>
 	</body>
 </html>
