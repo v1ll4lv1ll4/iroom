@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Smart Room Project</title>
 		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<script type="text/javascript" src="js/datos.js"></script>
 	</head>
 	<body>
 		<header class="caja-titulo">
@@ -11,7 +12,7 @@
 		</header>
 
 		<main class="main-bloque">
-			<form action="datos.js" class="form-columnas">
+			<form action="datos.js" class="form-columnas" novalidate onsubmit="validarFormulario(event)">
 				<section class="caja-habitacion">
 					<h2 class="estilo-cabecera-habitacion">
 						Datos de la habitación
@@ -55,7 +56,7 @@
 					</div>
 
 					<div style="text-align:center; padding-top:10px;">
-						<input value="Enviar Datos" type="Submit" onclick="return diferenciaTemp()">
+						<input value="Enviar Datos" type="Submit">
 					</div>
 				</section>
 
@@ -65,7 +66,7 @@
 					</h2>
 
 					<input id="sensor_temp" name="Temperatura" value="yes" type="checkbox">
-					<label for="sensor_temp">Temperatura</label><br>
+					<label for="sensor_temp">Temperatura (Actual: <span id="valor_t_actual">25</span> ºC)</label><br>
 
 					<input id="sensor_hum" name="Humedad" value="yes" type="checkbox">
 					<label for="sensor_hum">Humedad</label><br>
@@ -101,7 +102,11 @@
 			<a href="index.html">Volver al Inicio</a><br><br>
 			<a href="https://uah.es" target="_blank">Universidad de Alcalá</a>
 		</footer>
-
-		<script type="text/javascript" src="js/datos.js"></script>
+		<dialog id="modalErrores">
+			<p id="mensajeError"></p>
+			<button type="button" onclick="document.getElementById('modalErrores').close()">
+				Aceptar
+			</button>
+		</dialog>
 	</body>
 </html>
