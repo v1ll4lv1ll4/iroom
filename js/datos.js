@@ -180,13 +180,14 @@ function cargarMapa() {
 }
 
 function validarEmailCadenas(correo) {
-    if (!correo || correo.indexOf(" ") !== -1) return false;
+    var posArroba = correo.indexOf("@");
+    var ultimoPunto = correo.lastIndexOf(".");
 
-    var partes = correo.split("@");
-    if (partes.length !== 2 || partes[0] === "" || partes[1] === "") return false;
-
-    var etiquetas = partes[1].split(".");
-    if (etiquetas.length < 2 || etiquetas[etiquetas.length - 1].length < 2) return false;
+    if (correo.indexOf(" ") !== -1) return false;
+    if (posArroba <= 0) return false;
+    if (posArroba !== correo.lastIndexOf("@")) return false;
+    if (ultimoPunto < posArroba + 2) return false;
+    if (ultimoPunto > correo.length - 3) return false;
 
     return true;
 }
