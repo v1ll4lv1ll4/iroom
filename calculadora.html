@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Smart Room Project - Calculadora</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/calculadora.css">
+	<script src="js/calculadora.js" defer></script>
+</head>
+<body>
+	<header class="caja-titulo">
+		<h1>Smart Room Project</h1>
+	</header>
+
+	<nav class="caja-menus" aria-label="Navegación principal">
+		<a class="caja-menu_n" href="index.html">Inicio</a>
+		<a class="caja-menu_n" href="config.html">Menú Configuración</a>
+		<a class="caja-menu_n" href="minombre.html">Menú Nombre</a>
+		<a class="caja-menu_n" href="calculadora.html">Calculadora</a>
+	</nav>
+
+	<main class="contenedor-calculadora">
+		<section class="caja-calculadora">
+			<h2 class="estilo-cabecera">Calculadora de Temperaturas</h2>
+
+			<p style="text-align: left; margin-bottom: 5px;"><strong>Resultado:</strong></p>
+			<output id="pantalla_resultado" class="pantalla-resultado">0 °C</output>
+
+			<div class="controles-operacion">
+				<input type="number" id="operando1" class="campo-operando" placeholder="Valor 1">
+				<input type="number" id="operando2" class="campo-operando" placeholder="Valor 2">
+			</div>
+
+			<div class="botonera-matematica">
+				<button type="button" class="boton-operador" onclick="calcular('+')">+</button>
+				<button type="button" class="boton-operador" onclick="calcular('-')">-</button>
+				<button type="button" class="boton-operador" onclick="calcular('*')">×</button>
+				<button type="button" class="boton-operador" onclick="calcular('/')">÷</button>
+			</div>
+
+			<div class="zona-conversion">
+				<h3 style="color: #004085; font-size: 18px; margin-top:0;">Convertir resultado</h3>
+				
+				<div style="margin-bottom: 10px;">
+					<label for="unidad_actual">De:</label>
+					<select id="unidad_actual" class="selector-unidad">
+						<option value="C">Celsius (°C)</option>
+						<option value="K">Kelvin (K)</option>
+						<option value="F">Fahrenheit (°F)</option>
+					</select>
+				</div>
+				
+				<div>
+					<label for="unidad_destino">A:</label>
+					<select id="unidad_destino" class="selector-unidad">
+						<option value="C">Celsius (°C)</option>
+						<option value="K" selected>Kelvin (K)</option>
+						<option value="F">Fahrenheit (°F)</option>
+					</select>
+				</div>
+
+				<button type="button" class="boton-convertir" onclick="convertir()">Convertir ahora</button>
+			</div>
+
+		</section>
+	</main>
+
+	<footer class="caja-pie">
+		<a href="index.html">Volver al Inicio</a><br><br>
+		<a href="https://uah.es" target="_blank">Universidad de Alcalá</a>
+	</footer>
+
+	<dialog id="modalErrores" aria-labelledby="tituloModal">
+		<h2 id="tituloModal">Información</h2>
+		<p id="mensajeError"></p>
+		<button type="button" onclick="document.getElementById('modalErrores').close()">Aceptar</button>
+	</dialog>
+</body>
+</html>

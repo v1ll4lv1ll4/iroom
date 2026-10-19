@@ -1,0 +1,101 @@
+.contenedor-calculadora {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.caja-calculadora {
+    width: 450px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.pantalla-resultado {
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    padding: 15px;
+    text-align: right;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.controles-operacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.campo-operando {
+    width: 45%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.botonera-matematica {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.boton-operador {
+    flex: 1;
+    font-size: 24px;
+    padding: 15px;
+    background-color: #e9ecef;
+    color: #0056b3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton-operador:hover {
+    background-color: #d6e8fa;
+}
+
+.zona-conversion {
+    border-top: 2px dashed #ccc;
+    padding-top: 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.selector-unidad {
+    padding: 8px;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.boton-convertir {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.boton-convertir:hover {
+    background-color: #45a049;
+}
