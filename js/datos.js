@@ -244,11 +244,17 @@ function validarFormulario(event) {
 
     if (mensajesError !== "") {
         mostrarModal("CORRIGE ESTOS ERRORES:<br><br><ul>" + mensajesError + "</ul>");
+	guardarCoordenadas();
+	guardarCiudad();
+	guardarURL();
+	guardarTempMaxMin();
+	cargarMapa();
     } else {
         guardarCoordenadas();
         guardarCiudad();
         guardarURL();
         guardarTempMaxMin();
+	cargarMapa();
 
         mostrarModal("¡Formulario validado con éxito! Se ha guardado la información localmente.");
     }
