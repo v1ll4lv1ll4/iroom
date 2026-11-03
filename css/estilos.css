@@ -1,275 +1,350 @@
 * {
-	box-sizing: border-box;
+        box-sizing: border-box;
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	background-color: #f8f9fa;
-	color: #333;
-	margin: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        background-color: #f8f9fa;
+        color: #333;
+        margin: 8px;
 }
 
 .main-columnas {
-	display: flex;
-	justify-content: space-between;
-	gap: 5%;
-	width: 85%;
-	margin: 0 auto 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+        width: 85%;
+        margin: 0 auto 20px;
 }
 
 .main-bloque {
-	display: block;
-	margin-bottom: 20px;
+        display: block;
+        margin-bottom: 20px;
 }
 
 form.form-columnas {
-	display: flex;
-	justify-content: space-between;
-	gap: 2%;
-	width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 2%;
+        width: 100%;
 }
 
 .caja-titulo {
-	width: 100%;
-	border-radius: 10px;
-	background-color: #cce5ff;
-	color: #004085;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-	padding: 20px;
-	margin-bottom: 20px;
-	text-align: center;
-	font-size: 150%;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #cce5ff;
+        color: #004085;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 150%;
 }
 
 .caja-titulo h1 {
-	margin: 12px 0;
+        margin: 12px 0;
 }
 
 .caja-menus {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 8px;
-	width: 100%;
-	background-color: #fff;
-	border-radius: 8px;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-	padding: 15px;
-	font-size: 18px;
-	margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 15px;
+        font-size: 18px;
+        margin-bottom: 20px;
 }
 
 .caja-menu_n {
-	display: inline-block;
-	background-color: #e9ecef;
-	color: #0056b3;
-	border-radius: 5px;
-	padding: 10px 15px;
-	font-weight: bold;
-	text-decoration: none;
+        display: inline-block;
+        background-color: #e9ecef;
+        color: #0056b3;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-weight: bold;
+        text-decoration: none;
 }
 
 .caja-menu_n:hover {
-	background-color: #d9e7f8;
+        background-color: #d9e7f8;
 }
 
 .caja-info {
-	margin-left: auto;
+        margin-left: auto;
 }
 
 .caja-habitacion, .caja-sensores {
-	flex: 1;
-	min-width: 0;
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-	padding: 20px;
+        flex: 1;
+        min-width: 0;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: 20px;
 }
 
 .caja-formulario {
-	width: min(650px, 95%);
-	margin: 0 auto 20px;
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-	padding: 30px;
+        width: min(650px, 95%);
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: 30px;
 }
 
 label {
-	display: block;
-	text-align: left;
-	font-weight: bold;
-	margin-bottom: 5px;
+        display: block;
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 5px;
 }
 
 .campo-formulario {
-	display: block;
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 15px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	font-size: 16px;
-	min-width: 0;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        min-width: 0;
 }
 
 .caja-pie {
-	width: 100%;
-	background-color: #cce5ff;
-	border-radius: 5px;
-	padding: 20px;
-	text-align: center;
-	clear: both;
+        width: 100%;
+        background-color: #cce5ff;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        clear: both;
 }
 
 .caja-pie a {
-	color: #004085;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 110%;
-	margin: 0 12px;
+        color: #004085;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 110%;
+        margin: 0 12px;
 }
 
 .estilo-alertas {
-	text-align: center;
-	font-size: 120%;
-	font-weight: bold;
-	color: #004085;
-	margin-top: 24px;
+        text-align: center;
+        font-size: 120%;
+        font-weight: bold;
+        color: #004085;
+        margin-top: 24px;
 }
 
 .estilo-cabecera-sensores,
 .estilo-cabecera-habitacion,
 .estilo-cabecera {
-	text-align: center;
-	margin-top: 0;
-	padding: 15px;
-	border-radius: 8px;
-	font-size: 130%;
-	background-color: #cce5ff;
-	color: #004085;
+        text-align: center;
+        margin-top: 0;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 130%;
+        background-color: #cce5ff;
+        color: #004085;
 }
 
 .campo-en-linea {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
 }
 
 .campo-en-linea label {
-	flex: 0 0 155px;
-	margin-bottom: 0;
+        flex: 0 0 155px;
+        margin-bottom: 0;
 }
 
 .campo-en-linea .campo-formulario {
-	flex: 1;
-	width: auto;
-	margin-bottom: 0;
+        flex: 1;
+        width: auto;
+        margin-bottom: 0;
 }
 
 .campo-en-linea input[type="file"] {
-	font-size: 14px;
+        font-size: 14px;
 }
 
 .campo-temperatura-actual {
-	margin-top: 22px;
+        margin-top: 22px;
 }
 
 .checks > div {
-	margin: 7px 0;
+        margin: 7px 0;
 }
 
 .checks label {
-	display: inline;
-	font-weight: normal;
-	margin-left: 5px;
+        display: inline;
+        font-weight: normal;
+        margin-left: 5px;
 }
 
 .checks input {
-	vertical-align: middle;
+        vertical-align: middle;
 }
 
 .ayuda {
-	color: #596573;
-	font-size: 14px;
-	line-height: 1.45;
-	margin: 7px 0 18px;
+        color: #596573;
+        font-size: 14px;
+        line-height: 1.45;
+        margin: 7px 0 18px;
 }
 
 .centrado, .imagen-centrada {
-	text-align: center;
+        text-align: center;
 }
 
 .imagen-centrada img {
-	max-width: 100%;
-	height: auto;
-	margin-top: 12px;
+        max-width: 100%;
+        height: auto;
+        margin-top: 12px;
 }
 
 button {
-	cursor: pointer;
-	padding: 9px 14px;
-	border-radius: 5px;
-	border: 1px solid #aab9ca;
-	background-color: #e9ecef;
+        cursor: pointer;
+        padding: 9px 14px;
+        border-radius: 5px;
+        border: 1px solid #aab9ca;
+        background-color: #e9ecef;
 }
 
 button:hover {
-	background-color: #d6e8fa;
+        background-color: #d6e8fa;
 }
 
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible {
-	outline: 3px solid #f0a030;
-	outline-offset: 3px;
+        outline: 3px solid #f0a030;
+        outline-offset: 3px;
 }
 
 dialog {
-	border: 2px solid #004085;
-	border-radius: 9px;
-	padding: 24px;
-	width: min(560px, 94vw);
-	white-space: pre-line;
+        border: 2px solid #004085;
+        border-radius: 9px;
+        padding: 24px;
+        width: min(560px, 94vw);
+        white-space: pre-line;
 }
 
 dialog h2 {
-	margin-top: 0;
-	font-size: 21px;
-	color: #004085;
+        margin-top: 0;
+        font-size: 21px;
+        color: #004085;
 }
 
 .mensaje-exito {
-	max-width: 900px;
-	margin: 16px auto;
-	padding: 16px;
-	background: #e7f4e9;
-	border-left: 4px solid #2b844c;
+        max-width: 900px;
+        margin: 16px auto;
+        padding: 16px;
+        background: #e7f4e9;
+        border-left: 4px solid #2b844c;
 }
 
 .mensaje-error, .resultado-error {
-	color: #b02a37;
-	font-weight: bold;
+        color: #b02a37;
+        font-weight: bold;
 }
 
 .resultado-ok {
-	color: #166b3f;
-	font-weight: bold;
+        color: #166b3f;
+        font-weight: bold;
 }
 
 .acciones-email {
-	display: flex;
-	gap: 12px;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin: 18px auto;
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 18px auto;
 }
 
 .subtitulo {
-	color: #004085;
-	font-size: 20px;
-	margin-top: 35px;
+        color: #004085;
+        font-size: 20px;
+        margin-top: 35px;
+}
+
+/* ---------- Galería de imágenes ---------- */
+
+.caja-galeria {
+        width: min(1000px, 95%);
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        padding: 30px;
+}
+
+.galeria {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+}
+
+.galeria button {
+        flex: 0 0 auto;
+        font-size: 24px;
+}
+
+/* Ventana visible: oculta lo que no cabe y se desplaza con scrollLeft */
+.galeria-ventana {
+        flex: 1;
+        overflow: hidden;
+        padding: 10px;
+}
+
+.galeria-tira {
+        display: flex;
+        gap: 15px;
+}
+
+.foto-contenedor {
+        position: relative;
+        flex: 0 0 auto;
+        width: 350px;
+        height: 260px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.foto-miniatura {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+/* Cuadro de información: oculto por defecto, jQuery lo muestra con fadeIn() */
+.foto-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        display: none;
+        text-align: center;
+}
+
+/* Texto centrado verticalmente (no depende de que el div sea flex) */
+.foto-info p {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+        transform: translateY(-50%);
 }
