@@ -274,8 +274,6 @@ dialog h2 {
         margin-top: 35px;
 }
 
-/* ---------- Galería de imágenes ---------- */
-
 .caja-galeria {
         width: min(1000px, 95%);
         margin: 0 auto 20px;
@@ -296,7 +294,6 @@ dialog h2 {
         font-size: 24px;
 }
 
-/* Ventana visible: oculta lo que no cabe y se desplaza con scrollLeft */
 .galeria-ventana {
         flex: 1;
         overflow: hidden;
@@ -325,7 +322,6 @@ dialog h2 {
         object-fit: cover;
 }
 
-/* Cuadro de información: oculto por defecto, jQuery lo muestra con fadeIn() */
 .foto-info {
         position: absolute;
         top: 0;
@@ -338,7 +334,6 @@ dialog h2 {
         text-align: center;
 }
 
-/* Texto centrado verticalmente (no depende de que el div sea flex) */
 .foto-info p {
         position: absolute;
         top: 50%;
@@ -347,4 +342,12 @@ dialog h2 {
         margin: 0;
         padding: 0 10px;
         transform: translateY(-50%);
+}
+
+tabla1{
+	border: 1px solid #000;
+	border-collapse: collapse;
+	height: 60%;
+	width: 70%;
+	margin:0 auto;
 }
