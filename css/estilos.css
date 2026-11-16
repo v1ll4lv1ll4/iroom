@@ -344,7 +344,7 @@ dialog h2 {
         transform: translateY(-50%);
 }
 
-caja-tablas{
+.caja-tablas{
 	width: min(900px, 95%);
 	margin: 0 auto 20px;
 	background-color: #fff;

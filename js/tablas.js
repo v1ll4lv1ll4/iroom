@@ -9,7 +9,7 @@ $(document).ready(function(){
 		});
 
 		$(contenedor+" th").css({
-			"background-color": "cce5ff",
+			"background-color": "#cce5ff",
 			"color": "#004085",
 			"padding": "10px",
 			"border": "1px solid #aab9ca",
