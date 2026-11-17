@@ -5,7 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Smart Room Project - Configuración</title>
 	<link rel="stylesheet" href="css/estilos.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 	<script src="js/datos.js" defer></script>
+	<script src="js/ciudades.js" defer></script>
 </head>
 <body>
 	<header class="caja-titulo">
@@ -19,20 +21,20 @@
 
 				<div class="campo-en-linea">
 					<label for="pais">País: *</label>
-					<input id="pais" name="pais" list="paises" class="campo-formulario" required autocomplete="country-name">
+					<select id="pais" name="pais" class="campo-formulario" required>
+						<option value="">Selecciona un país</option>
+						<option value="España">España</option>
+						<option value="Francia">Francia</option>
+						<option value="Portugal">Portugal</option>
+						<option value="Italia">Italia</option>
+					</select>
 				</div>
-
-				<datalist id="paises">
-					<option value="España"></option>
-					<option value="Portugal"></option>
-					<option value="Francia"></option>
-					<option value="Italia"></option>
-					<option value="Grecia"></option>
-				</datalist>
 
 				<div class="campo-en-linea">
 					<label for="ciudad">Ciudad:</label>
-					<input id="ciudad" name="ciudad" type="text" class="campo-formulario" autocomplete="address-level2">
+					<select id="ciudad" name="ciudad" class="campo-formulario">
+						<option value="">Selecciona primero un país</option>
+					</select>
 				</div>
 
 				<div class="campo-en-linea">

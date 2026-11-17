@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<estaciones>
+    <estacion>
+        <ciudad>Málaga</ciudad>
+        <temperatura>29</temperatura>
+        <humedad>66</humedad>
+        <ruido>110</ruido>
+        <luz>220</luz>
+        <color>800080</color>
+    </estacion>
+
+    <estacion>
+        <ciudad>Murcia</ciudad>
+        <temperatura>33</temperatura>
+        <humedad>45</humedad>
+        <ruido>95</ruido>
+        <luz>205</luz>
+        <color>A52A2A</color>
+    </estacion>
+
+    <estacion>
+        <ciudad>Oviedo</ciudad>
+        <temperatura>14</temperatura>
+        <humedad>80</humedad>
+        <ruido>60</ruido>
+        <luz>85</luz>
+        <color>008000</color>
+    </estacion>
+
+    <estacion>
+        <ciudad>Pamplona</ciudad>
+        <temperatura>15</temperatura>
+        <humedad>68</humedad>
+        <ruido>130</ruido>
+        <luz>100</luz>
+        <color>000080</color>
+    </estacion>
+
+    <estacion>
+        <ciudad>Salamanca</ciudad>
+        <temperatura>17</temperatura>
+        <humedad>50</humedad>
+        <ruido>75</ruido>
+        <luz>130</luz>
+        <color>FFC0CB</color>
+    </estacion>
+</estaciones>

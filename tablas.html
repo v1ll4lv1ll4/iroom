@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width", initial-scale="1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Smart Room Project - Tablas</title>
 		<link rel="stylesheet" href="css/estilos.css">
 		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -13,6 +13,8 @@
 			<h1>Tablas de las Estaciones Meteorológicas</h1>
 		</header>
 		<main class="caja-tablas">
+			<label for="buscarCiudad">Buscar ciudad:</label>
+			<input type="text" id="buscarCiudad" class="campo-formulario" placeholder="Escribe el nombre de una ciudad">
 			<div class="pagina" id="pagina1">
 				<table>
 					<tr>
@@ -119,106 +121,34 @@
 			</div>
 			<div class="pagina" id="pagina3">
 				<table>
-					<tr>
-						<th>Ciudad</th>
-						<th>Temperatura (º)</th>
-						<th>Humedad (%)</th>
-						<th>Ruido</th>
-						<th>Nivel de luz</th>
-						<th>Color de iluminación</th>
-					</tr>
-					<tr>
-						<td>Málaga</td>
-						<td>29</td>
-						<td>66</td>
-						<td>110</td>
-						<td>220</td>
-						<td>800080</td>
-					</tr>
-					<tr>
-						<td>Murcia</td>
-						<td>33</td>
-						<td>45</td>
-						<td>95</td>
-						<td>205</td>
-						<td>A52A2A</td>
-					</tr>
-					<tr>
-						<td>Oviedo</td>
-						<td>14</td>
-						<td>80</td>
-						<td>60</td>
-						<td>85</td>
-						<td>008000</td>
-					</tr>
-					<tr>
-						<td>Pamplona</td>
-						<td>15</td>
-						<td>68</td>
-						<td>130</td>
-						<td>100</td>
-						<td>000080</td>
-					</tr>
-					<tr>
-						<td>Salamanca</td>
-						<td>17</td>
-						<td>50</td>
-						<td>75</td>
-						<td>130</td>
-						<td>FFC0CB</td>
-					</tr>
+					<thead>
+						<tr>
+							<th>Ciudad</th>
+							<th>Temperatura (º)</th>
+							<th>Humedad (%)</th>
+							<th>Ruido</th>
+							<th>Nivel de luz</th>
+							<th>Color de iluminación</th>
+						</tr>
+					</thead>
+					<tbody id="datos_xml">
+					</tbody>
 				</table>
 			</div>
 			<div class="pagina" id="pagina4">
 				<table>
-					<tr>
-						<th>Ciudad</th>
-						<th>Temperatura (º)</th>
-						<th>Humedad (%)</th>
-						<th>Ruido</th>
-						<th>Nivel de luz</th>
-						<th>Color de iluminación</th>
-					</tr>
-					<tr>
-						<td>Santander</td>
-						<td>17</td>
-						<td>75</td>
-						<td>85</td>
-						<td>110</td>
-						<td>87CEEB</td>
-					</tr>
-					<tr>
-						<td>Sevilla</td>
-						<td>36</td>
-						<td>35</td>
-						<td>140</td>
-						<td>230</td>
-						<td>FF4500</td>
-					</tr>
-					<tr>
-						<td>Toledo</td>
-						<td>31</td>
-						<td>33</td>
-						<td>100</td>
-						<td>195</td>
-						<td>FFD700</td>
-					</tr>
-					<tr>
-						<td>Valencia</td>
-						<td>27</td>
-						<td>64</td>
-						<td>175</td>
-						<td>175</td>
-						<td>40E0D0</td>
-					</tr>
-					<tr>
-						<td>Zaragoza</td>
-						<td>26</td>
-						<td>44</td>
-						<td>155</td>
-						<td>160</td>
-						<td>DC143C</td>
-					</tr>
+					<thead>
+						<tr>
+							<th>Ciudad</th>
+							<th>Temperatura (º)</th>
+							<th>Humedad (%)</th>
+							<th>Ruido</th>
+							<th>Nivel de luz</th>
+							<th>Color de iluminación</th>
+						</tr>
+					</thead>
+					<tbody id="datos_json">
+					</tbody>
 				</table>
 			</div>
 			<div class="paginacion">
@@ -227,6 +157,16 @@
 				<a href="#" class="pagina-link" data-pagina="3">Página 3</a>
 				<a href="#" class="pagina-link" data-pagina="4">Página 4</a>
 			</div>
+			<div class="controles-histograma">
+				<h2>Histograma de las estaciones</h2>
+				<p>Selecciona una propiedad para representar:</p>
+				
+				<label><input type="checkbox" class="checkbox-histograma" value="1"> Temperatura</label>
+				<label><input type="checkbox" class="checkbox-histograma" value="2"> Humedad</label>
+				<label><input type="checkbox" class="checkbox-histograma" value="3"> Ruido</label>
+				<label><input type="checkbox" class="checkbox-histograma" value="4"> Nivel de luz</label>
+			</div>
+			<div id="histograma"></div>
 		</main>
 
 		<footer class="caja-pie">

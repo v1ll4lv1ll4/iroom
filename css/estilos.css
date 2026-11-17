@@ -365,3 +365,36 @@ dialog h2 {
 	text-decoration: none;
 	font-weight: bold;
 }
+
+#histograma {
+	width: 90%;
+	margin: 25px auto;
+}
+
+.hist-fila {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 10px 0;
+}
+
+.hist-ciudad {
+	width: 150px;
+	flex-shrink: 0;
+}
+
+.hist-fondo {
+	flex: 1;
+	height: 28px;
+	background-color: #edf2f8;
+}
+
+.hist-barra {
+	height: 100%;
+	background-color: #4a91d1;
+}
+
+.hist-valor {
+	width: 40px;
+	font-weight: bold;
+}

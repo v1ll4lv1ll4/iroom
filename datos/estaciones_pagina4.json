@@ -1,0 +1,42 @@
+[
+    {
+        "ciudad": "Santander",
+        "temperatura": 17,
+        "humedad": 75,
+        "ruido": 85,
+        "luz": 110,
+        "color": "87CEEB"
+    },
+    {
+        "ciudad": "Sevilla",
+        "temperatura": 36,
+        "humedad": 35,
+        "ruido": 140,
+        "luz": 230,
+        "color": "FF4500"
+    },
+    {
+        "ciudad": "Toledo",
+        "temperatura": 31,
+        "humedad": 33,
+        "ruido": 100,
+        "luz": 195,
+        "color": "FFD700"
+    },
+    {
+        "ciudad": "Valencia",
+        "temperatura": 27,
+        "humedad": 64,
+        "ruido": 175,
+        "luz": 175,
+        "color": "40E0D0"
+    },
+    {
+        "ciudad": "Zaragoza",
+        "temperatura": 26,
+        "humedad": 44,
+        "ruido": 155,
+        "luz": 160,
+        "color": "DC143C"
+    }
+]
